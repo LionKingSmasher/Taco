@@ -1,0 +1,98 @@
+   Compiling Taco v0.1.0 (/run/media/shinpc/ShinBunker/Project/ShinOS/Taco)
+warning: variant `L_GRAY` should have an upper camel case name
+  --> src/taco_vga.rs:13:5
+   |
+13 |     L_GRAY    = 7,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LGray`
+   |
+   = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: variant `D_GRAY` should have an upper camel case name
+  --> src/taco_vga.rs:14:5
+   |
+14 |     D_GRAY    = 8,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `DGray`
+
+warning: variant `L_BLUE` should have an upper camel case name
+  --> src/taco_vga.rs:15:5
+   |
+15 |     L_BLUE    = 9,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LBlue`
+
+warning: variant `L_GREEN` should have an upper camel case name
+  --> src/taco_vga.rs:16:5
+   |
+16 |     L_GREEN   = 10,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `LGreen`
+
+warning: variant `L_CYAN` should have an upper camel case name
+  --> src/taco_vga.rs:17:5
+   |
+17 |     L_CYAN    = 11,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `LCyan`
+
+warning: variant `L_RED` should have an upper camel case name
+  --> src/taco_vga.rs:18:5
+   |
+18 |     L_RED     = 12,
+   |     ^^^^^ help: convert the identifier to upper camel case: `LRed`
+
+warning: variant `L_MAGENTA` should have an upper camel case name
+  --> src/taco_vga.rs:19:5
+   |
+19 |     L_MAGENTA = 13,
+   |     ^^^^^^^^^ help: convert the identifier to upper camel case: `LMagenta`
+
+warning: associated function is never used: `new`
+  --> src/taco_vga.rs:29:8
+   |
+29 |     fn new(fore : VGAColorCode, back : VGAColorCode) -> TacoColor {
+   |        ^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: constant is never used: `TACO_VGA_BUFFER_HEIGHT`
+  --> src/taco_vga.rs:41:1
+   |
+41 | const TACO_VGA_BUFFER_HEIGHT : usize = 25;
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant is never used: `TACO_VGA_BUFFER_WEIGHT`
+  --> src/taco_vga.rs:42:1
+   |
+42 | const TACO_VGA_BUFFER_WEIGHT : usize = 80;
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: struct is never constructed: `TacoScreenBuffer`
+  --> src/taco_vga.rs:45:12
+   |
+45 | pub struct TacoScreenBuffer {
+   |            ^^^^^^^^^^^^^^^^
+
+warning: struct is never constructed: `TacoVgaWriter`
+  --> src/taco_vga.rs:49:12
+   |
+49 | pub struct TacoVgaWriter {
+   |            ^^^^^^^^^^^^^
+
+warning: associated function is never used: `new`
+  --> src/taco_vga.rs:57:12
+   |
+57 |     pub fn new(row_pos : usize, col_pos : usize, color_code : TacoColor, buf : &'static mut TacoScreenBuffer) -> TacoVgaWriter {
+   |            ^^^
+
+warning: associated function is never used: `write_byte`
+  --> src/taco_vga.rs:66:12
+   |
+66 |     pub fn write_byte(&mut self, byte : u8) {
+   |            ^^^^^^^^^^
+
+warning: crate `Taco` should have a snake case name
+  |
+  = note: `#[warn(non_snake_case)]` on by default
+  = help: convert the identifier to snake case: `taco`
+
+warning: `Taco` (bin "Taco") generated 15 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.51s
+   Compiling bootloader v0.9.22 (/home/shinpc/.cargo/registry/src/github.com-1ecc6299db9ec823/bootloader-0.9.22)
+    Finished release [optimized + debuginfo] target(s) in 1.20s
